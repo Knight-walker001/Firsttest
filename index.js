@@ -1,0 +1,15 @@
+document.getElementById('signupForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const firstName = document.getElementById('firstName').value.trim();
+  const lastName = document.getElementById('lastName').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value;
+
+  if (!firstName || !lastName || !email || !password) {
+    alert("Please fill in all fields.");
+    return;
+  }
+
+  alert(`Welcome, ${firstName}! Your trial has started.`);
+});
