@@ -11,5 +11,10 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
     return;
   }
 
+  if (password.length < 6) {
+    alert("Password must be at least 6 characters long.");
+    return;
+  }
+
   alert(`Welcome, ${firstName}! Your trial has started.`);
 });
