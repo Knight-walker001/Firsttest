@@ -1,4 +1,4 @@
-document.getElementById('signupForm').addEventListener('submit', function (e) {
+document.getElementById('signup').addEventListener('submit', function (e) {
   e.preventDefault();
 
   const firstName = document.getElementById('firstName').value.trim();
@@ -8,11 +8,6 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
 
   if (!firstName || !lastName || !email || !password) {
     alert("Please fill in all fields.");
-    return;
-  }
-
-  if (password.length < 6) {
-    alert("Password must be at least 6 characters long.");
     return;
   }
 
